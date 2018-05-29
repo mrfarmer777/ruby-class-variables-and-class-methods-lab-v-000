@@ -43,7 +43,7 @@ class Song
     res={}
     count=0
     @@genres.each do |genre|
-      if res[genre]=nil
+      if res[genre]==nil
         res[genre]=0
       end
       res[genre]+=1
@@ -55,7 +55,7 @@ class Song
     res={}
     count=0
     @@artists.each do |artist|
-      if res[artist]=nil
+      if res[artist]==nil
         res[artist]=0
       end
       res[artist]+=1
