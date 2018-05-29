@@ -21,6 +21,5 @@ class Song(name, artist, genre)
       @@genres[genre]+=1            #Otherwise, add one to the genre count
     end
   end
-end
-
   
+end
