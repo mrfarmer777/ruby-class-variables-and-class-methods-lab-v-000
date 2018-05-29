@@ -12,7 +12,7 @@ class Song
     @genre=genre
     @@count+=1
 
-    
+
     if !artists.contains?(artist)   #Artist NOT in the list?
       @@artists<<artist             #add them to the array
     end
@@ -22,6 +22,6 @@ class Song
     else
       @@genres[genre]+=1            #Otherwise, add one to the genre count
     end
-    
+
   end
 end
