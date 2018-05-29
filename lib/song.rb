@@ -12,7 +12,7 @@ class Song
     @genre=genre
     @@count+=1
 
-
+    binding.pry
     if !@@artists.include?(@artist)   #Artist NOT in the list?
       @@artists<<@artist             #add them to the array
     end
