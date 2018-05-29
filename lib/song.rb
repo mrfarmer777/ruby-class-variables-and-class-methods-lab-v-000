@@ -13,14 +13,14 @@ class Song
     @@count+=1
 
 
-    if !@@artists.include?(artist)   #Artist NOT in the list?
-      @@artists<<artist             #add them to the array
+    if !@@artists.include?(@artist)   #Artist NOT in the list?
+      @@artists<<@artist             #add them to the array
     end
 
-    if @@genres[genre]==nil         #Are you missing the genre?
-      @@genres[genre]=1             #Instantiate a new genre with a count of 1
+    if @@genres[@genre]==nil         #Are you missing the genre?
+      @@genres[@genre]=1             #Instantiate a new genre with a count of 1
     else
-      @@genres[genre]+=1            #Otherwise, add one to the genre count
+      @@genres[@genre]+=1            #Otherwise, add one to the genre count
     end
 
   end
