@@ -23,5 +23,5 @@ class Song
       @@genres[genre]+=1            #Otherwise, add one to the genre count
     end
     DOC
-
+  end
 end
