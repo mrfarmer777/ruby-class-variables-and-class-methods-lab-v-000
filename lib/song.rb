@@ -33,8 +33,9 @@ class Song
     res=[]
     @@artists.each do |artist|
       if !res.include?(artist)
-        res<<genre
+        res<<artist
       end
     end
     res
+  end
 end
