@@ -42,12 +42,12 @@ class Song
   def genre_count
     res={}
     count=0
-    @@genres.each do |genre|      
+    @@genres.each do |genre|
       if res[genre]=nil
-        res[genre]=0        
+        res[genre]=0
       end
       res[genre]+=1
     end
     res
-  end        
+  end
 end
