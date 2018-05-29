@@ -21,7 +21,7 @@ class Song
 
   def self.genres
     res=[]
-    @@genres.each do |genre|
+    @@genres.collect do |genre|
       if !res.include?(genre)
         res<<genre
       end
