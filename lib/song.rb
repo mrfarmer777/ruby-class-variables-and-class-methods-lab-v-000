@@ -50,4 +50,16 @@ class Song
     end
     res
   end
+
+  def artist_count
+    res={}
+    count=0
+    @@artists.each do |artist|
+      if res[artist]=nil
+        res[artist]=0
+      end
+      res[artist]+=1
+    end
+    res
+  end
 end
