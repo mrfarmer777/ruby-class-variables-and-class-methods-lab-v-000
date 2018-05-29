@@ -39,7 +39,7 @@ class Song
     res
   end
 
-  def genre_count
+  def self.genre_count
     res={}
     count=0
     @@genres.each do |genre|
@@ -51,7 +51,7 @@ class Song
     res
   end
 
-  def artist_count
+  def self.artist_count
     res={}
     count=0
     @@artists.each do |artist|
