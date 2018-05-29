@@ -28,4 +28,13 @@ class Song
     end
     res
   end
+
+  def self.artists
+    res=[]
+    @@artists.each do |artist|
+      if !res.include?(artist)
+        res<<genre
+      end
+    end
+    res
 end
