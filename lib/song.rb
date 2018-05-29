@@ -13,7 +13,7 @@ class Song
     @@count+=1
 
 
-    if !@@artists.contains?(artist)   #Artist NOT in the list?
+    if !@@artists.contain?(artist)   #Artist NOT in the list?
       @@artists<<artist             #add them to the array
     end
 
